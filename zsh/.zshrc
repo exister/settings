@@ -52,3 +52,7 @@ alias postgres-start='pg_ctl -l /usr/local/var/postgres/server.log -o "-i" start
 alias postgres-stop='pg_ctl stop -s -m fast'
 alias cdrepos='cd /Volumes/FreeAgent\ GoFlex\ Drive/Data/HG'
 alias mongodb-start='mongod run --config /usr/local/Cellar/mongodb/2.0.2-x86_64/mongod.conf'
+alias redis-clear='redis-cli KEYS "*" | xargs redis-cli DEL'
+alias ls='ls -alihG'
+alias rs='./manage.py runserver'
+alias shp='./manage.py shell_plus --print-sql'
