@@ -1,0 +1,12 @@
+$TTL    3600
+@               IN      SOA mac.local.  hostmaster.mac.local.  (
+                            2009121801      ; Serial
+                            3600            ; Refresh
+                            900             ; Retry
+                            3600000         ; Expire
+                            3600 )          ; Minimum
+@               IN      NS  ns1.mac.local. 
+$ORIGIN mac.local.
+greenlamp       IN      A   192.168.244.33
+ns1		IN	A	192.168.244.33
+

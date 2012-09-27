@@ -1,0 +1,11 @@
+$TTL    3600
+@               IN      SOA mac.local.  hostmaster.mac.local.  (
+                            2009121801      ; Serial
+                            3600            ; Refresh
+                            900             ; Retry
+                            3600000         ; Expire
+                            3600 )          ; Minimum
+@               IN      NS  patos.mac.local.
+$ORIGIN 244.168.192.in-addr.arpa.
+33	IN      PTR greenlamp.mac.local.
+
