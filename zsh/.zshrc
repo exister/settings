@@ -24,7 +24,7 @@ ZSH_THEME="robbyrussell"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git osx django pip brew gem github rails redis-cli ruby rvm)
+plugins=(git osx django pip brew gem github rails redis-cli ruby rvm extract mercurial redis)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -36,6 +36,7 @@ export PYTHONPATH=/usr/local/lib/python:$PYTHONPATH
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/Code/Python
 export PIP_RESPECT_VIRTUALENV=true
+VIRTUALENVWRAPPER_PYTHON="/usr/bin/python"
 source /usr/local/bin/virtualenvwrapper.sh
 
 #postgres
@@ -58,3 +59,7 @@ alias delete-pyc="find ./ -name '*.pyc' -exec rm {} \;"
 alias ls='ls -alihG'
 alias rs='./manage.py runserver'
 alias shp='./manage.py shell_plus --print-sql'
+
+alias sagusha='ssh agulife@agulife.ru'
+alias spetr='ssh site_petr1_ru@176.34.243.52'
+alias smpromo='ssh mlegend@miller-legend.com'
